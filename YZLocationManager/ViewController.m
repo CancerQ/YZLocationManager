@@ -80,7 +80,7 @@
     
     NSDateFormatter *dateFormatter =[[NSDateFormatter alloc] init];
     // 设置日期格式
-    [dateFormatter setDateFormat:@"YYYY/mm/dd hh:mm:ss"];
+    [dateFormatter setDateFormat:@"YYYY/MM/dd hh:mm:ss"];
     
     NSString *dateString = [dateFormatter stringFromDate:[NSDate date]];
     
