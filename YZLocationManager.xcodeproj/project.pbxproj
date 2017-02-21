@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05FF04DBEA83390FDC2CF04A /* libPods-YZLocationManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA7FDF035BAAB4D8BECAE8F /* libPods-YZLocationManager.a */; };
+		1007F8D61E5B0C5700248C1F /* YZBackgroundTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1007F8D51E5B0C5600248C1F /* YZBackgroundTaskManager.m */; };
 		10E0BF8B1E5AD08900CB5149 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E0BF8A1E5AD08900CB5149 /* main.m */; };
 		10E0BF8E1E5AD08900CB5149 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E0BF8D1E5AD08900CB5149 /* AppDelegate.m */; };
 		10E0BF911E5AD08900CB5149 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E0BF901E5AD08900CB5149 /* ViewController.m */; };
 		10E0BF941E5AD08900CB5149 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10E0BF921E5AD08900CB5149 /* Main.storyboard */; };
 		10E0BF961E5AD08900CB5149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10E0BF951E5AD08900CB5149 /* Assets.xcassets */; };
 		10E0BF991E5AD08900CB5149 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10E0BF971E5AD08900CB5149 /* LaunchScreen.storyboard */; };
+		10E0BFA41E5AD0A500CB5149 /* YZLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E0BFA21E5AD0A500CB5149 /* YZLocationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1007F8D41E5B0C5600248C1F /* YZBackgroundTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZBackgroundTaskManager.h; sourceTree = "<group>"; };
+		1007F8D51E5B0C5600248C1F /* YZBackgroundTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZBackgroundTaskManager.m; sourceTree = "<group>"; };
+		1017F0071E5C1ABC0080BEF7 /* YZLocationManager-Prefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YZLocationManager-Prefix.h"; sourceTree = "<group>"; };
 		10E0BF861E5AD08900CB5149 /* YZLocationManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YZLocationManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10E0BF8A1E5AD08900CB5149 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		10E0BF8C1E5AD08900CB5149 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +32,12 @@
 		10E0BF951E5AD08900CB5149 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10E0BF981E5AD08900CB5149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10E0BF9A1E5AD08900CB5149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10E0BFA11E5AD0A500CB5149 /* YZLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZLocationManager.h; sourceTree = "<group>"; };
+		10E0BFA21E5AD0A500CB5149 /* YZLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZLocationManager.m; sourceTree = "<group>"; };
+		10E0BFA31E5AD0A500CB5149 /* YZLocationManagerMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZLocationManagerMacro.h; sourceTree = "<group>"; };
+		2FCB6C3008C08C00C10C1885 /* Pods-YZLocationManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZLocationManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-YZLocationManager/Pods-YZLocationManager.release.xcconfig"; sourceTree = "<group>"; };
+		C9451D040E5890DBFF9DAA07 /* Pods-YZLocationManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZLocationManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YZLocationManager/Pods-YZLocationManager.debug.xcconfig"; sourceTree = "<group>"; };
+		DAA7FDF035BAAB4D8BECAE8F /* libPods-YZLocationManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YZLocationManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05FF04DBEA83390FDC2CF04A /* libPods-YZLocationManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +57,8 @@
 			children = (
 				10E0BF881E5AD08900CB5149 /* YZLocationManager */,
 				10E0BF871E5AD08900CB5149 /* Products */,
+				E706919C55B4AD1F0F3FE152 /* Pods */,
+				FE8F0113D7F289BF9D5FEAB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +73,7 @@
 		10E0BF881E5AD08900CB5149 /* YZLocationManager */ = {
 			isa = PBXGroup;
 			children = (
+				10E0BFA01E5AD09A00CB5149 /* YZLocationManager */,
 				10E0BF8C1E5AD08900CB5149 /* AppDelegate.h */,
 				10E0BF8D1E5AD08900CB5149 /* AppDelegate.m */,
 				10E0BF8F1E5AD08900CB5149 /* ViewController.h */,
@@ -75,8 +91,38 @@
 			isa = PBXGroup;
 			children = (
 				10E0BF8A1E5AD08900CB5149 /* main.m */,
+				1017F0071E5C1ABC0080BEF7 /* YZLocationManager-Prefix.h */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10E0BFA01E5AD09A00CB5149 /* YZLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				10E0BFA11E5AD0A500CB5149 /* YZLocationManager.h */,
+				10E0BFA21E5AD0A500CB5149 /* YZLocationManager.m */,
+				10E0BFA31E5AD0A500CB5149 /* YZLocationManagerMacro.h */,
+				1007F8D41E5B0C5600248C1F /* YZBackgroundTaskManager.h */,
+				1007F8D51E5B0C5600248C1F /* YZBackgroundTaskManager.m */,
+			);
+			path = YZLocationManager;
+			sourceTree = "<group>";
+		};
+		E706919C55B4AD1F0F3FE152 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9451D040E5890DBFF9DAA07 /* Pods-YZLocationManager.debug.xcconfig */,
+				2FCB6C3008C08C00C10C1885 /* Pods-YZLocationManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE8F0113D7F289BF9D5FEAB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAA7FDF035BAAB4D8BECAE8F /* libPods-YZLocationManager.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +132,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10E0BF9D1E5AD08900CB5149 /* Build configuration list for PBXNativeTarget "YZLocationManager" */;
 			buildPhases = (
+				C867220821CC3494EBEA8B82 /* [CP] Check Pods Manifest.lock */,
 				10E0BF821E5AD08900CB5149 /* Sources */,
 				10E0BF831E5AD08900CB5149 /* Frameworks */,
 				10E0BF841E5AD08900CB5149 /* Resources */,
+				AFFE5D6DC30E6F6530FC7BFC /* [CP] Embed Pods Frameworks */,
+				1223FD1F2E01B484CC99BEE5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,8 +159,13 @@
 				TargetAttributes = {
 					10E0BF851E5AD08900CB5149 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = Y4RA2MF373;
+						DevelopmentTeam = ERY9HN92VK;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -146,13 +200,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1223FD1F2E01B484CC99BEE5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YZLocationManager/Pods-YZLocationManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFFE5D6DC30E6F6530FC7BFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YZLocationManager/Pods-YZLocationManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C867220821CC3494EBEA8B82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		10E0BF821E5AD08900CB5149 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				10E0BF911E5AD08900CB5149 /* ViewController.m in Sources */,
+				10E0BFA41E5AD0A500CB5149 /* YZLocationManager.m in Sources */,
 				10E0BF8E1E5AD08900CB5149 /* AppDelegate.m in Sources */,
+				1007F8D61E5B0C5700248C1F /* YZBackgroundTaskManager.m in Sources */,
 				10E0BF8B1E5AD08900CB5149 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,10 +373,13 @@
 		};
 		10E0BF9E1E5AD08900CB5149 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9451D040E5890DBFF9DAA07 /* Pods-YZLocationManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Y4RA2MF373;
+				DEVELOPMENT_TEAM = ERY9HN92VK;
+				GCC_PREFIX_HEADER = "YZLocationManager/YZLocationManager-Prefix.h";
 				INFOPLIST_FILE = YZLocationManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CancerQ.YZLocationManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -281,10 +388,13 @@
 		};
 		10E0BF9F1E5AD08900CB5149 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FCB6C3008C08C00C10C1885 /* Pods-YZLocationManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Y4RA2MF373;
+				DEVELOPMENT_TEAM = ERY9HN92VK;
+				GCC_PREFIX_HEADER = "YZLocationManager/YZLocationManager-Prefix.h";
 				INFOPLIST_FILE = YZLocationManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CancerQ.YZLocationManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -310,6 +420,7 @@
 				10E0BF9F1E5AD08900CB5149 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
