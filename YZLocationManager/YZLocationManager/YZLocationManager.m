@@ -28,6 +28,8 @@
 static CLLocationManager *clLocationManager;
 @implementation YZLocationManager
 
+#pragma mark - Lifecycle (生命周期)
+
 + (YZLocationManager *)sharedLocationManager{
     static YZLocationManager *LocationManager = nil;
     static dispatch_once_t onceToken;
@@ -57,6 +59,7 @@ static CLLocationManager *clLocationManager;
     self.backGroundLocationTime = nil;
 }
 
+#pragma mark - Custom Accessors (自定义控制器)
 - (void)setIsBackGroundLocation:(BOOL)isBackGroundLocation{
     _isBackGroundLocation = isBackGroundLocation;
     if (isBackGroundLocation) {
@@ -93,6 +96,8 @@ static CLLocationManager *clLocationManager;
     }
     _YZBackGroundLocationHander = [YZBackGroundLocationHander copy];
 }
+
+#pragma mark - Public (公有方法)
 
 - (void)receiveCoorinate:(void (^)(CLLocationCoordinate2D, NSError *))coordinateHander geocderAddress:(void (^)(NSString *, NSUInteger))addressHander{
     self.YZLocationCoordinate = [coordinateHander copy];
@@ -138,6 +143,7 @@ static CLLocationManager *clLocationManager;
     [self.locationService stopUserLocationService];
 
 }
+#pragma mark - Private (私有方法)
 - (void)restartLocationUpdates{
     YZLMLOG(@"重启定位服务");
     if (self.restartTime) {
@@ -146,6 +152,7 @@ static CLLocationManager *clLocationManager;
     }
     [self startLocationService];
 }
+
 - (void)backGroundBackCoordinate{
     if ([self _checkCLAuthorizationStatus]) {
         if (self.YZBackGroundLocationHander) {
@@ -158,6 +165,7 @@ static CLLocationManager *clLocationManager;
         }
     }
 }
+
 //检测是否打开定位
 - (BOOL)_checkCLAuthorizationStatus{
     if ([CLLocationManager locationServicesEnabled] == NO){
@@ -187,6 +195,7 @@ static CLLocationManager *clLocationManager;
         [self.bgTask beginNewBackgroundTask];
     }
 }
+
 - (void)reverseGeoCodeCoordinate:(CLLocationCoordinate2D)coordinate{
     BMKGeoCodeSearch *geoCodeSearch = [[BMKGeoCodeSearch alloc]init];
     geoCodeSearch.delegate = self;
@@ -201,6 +210,8 @@ static CLLocationManager *clLocationManager;
         NSLog(@"反检索失败");
     }
 }
+
+#pragma mark - Delegate (代理)
 #pragma mark - BMKLocationServiceDelegate
 - (void)didUpdateBMKUserLocation:(BMKUserLocation *)userLocation{
     
