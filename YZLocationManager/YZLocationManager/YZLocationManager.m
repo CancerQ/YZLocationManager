@@ -143,6 +143,7 @@ static CLLocationManager *clLocationManager;
     [self.locationService stopUserLocationService];
 
 }
+
 #pragma mark - Private (私有方法)
 - (void)restartLocationUpdates{
     YZLMLOG(@"重启定位服务");
@@ -211,7 +212,7 @@ static CLLocationManager *clLocationManager;
     }
 }
 
-#pragma mark - Delegate (代理)
+#pragma mark - Protocol conformance (协议代理)
 #pragma mark - BMKLocationServiceDelegate
 - (void)didUpdateBMKUserLocation:(BMKUserLocation *)userLocation{
     
