@@ -1,7 +1,7 @@
 # YZLocationManager
 基于百度地图的定位类 原文地址 http://www.jianshu.com/p/cc3cee4f64a9
-```python
-    YZLocationManager *manager = [YZLocationManager sharedLocationManager];
+```objc
+    YZLocationManager *manager = [YZLocationManager sharedLocationManager];
     manager.isBackGroundLocation = YES;
     manager.locationInterval = 10;
 //    @weakify(manager)
