@@ -1,5 +1,5 @@
 # YZLocationManager
-基于百度地图的定位类 里面包含百度地图有点大建议打包下载不要进行克隆 原文地址 http://www.jianshu.com/p/cc3cee4f64a9
+基于百度地图的定位类 里面包含百度地图有点大建议打包下载不要进行克隆  ```没有百度地图请点[这里](https://github.com/CancerQ/YZLocationManager-)``` 原文地址 http://www.jianshu.com/p/cc3cee4f64a9
 ```objc
     YZLocationManager *manager = [YZLocationManager sharedLocationManager];
     manager.isBackGroundLocation = YES;
